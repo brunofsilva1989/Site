@@ -107,7 +107,7 @@ section {
     width: 360px;
     height: 360px;
     border-radius: 50%;
-    background: url("../img/janisonazul.png") center center no-repeat;
+    background: url("../img/janisonazul.avif") center center no-repeat;
     background-size: contain;
     opacity: 0.95;
 }
@@ -229,7 +229,7 @@ footer {
 /*Ajustes do paralax*/
 
 .paralax-fade {
-    background-image: url('../img/paralax3.jpg');
+    background-image: url('../img/paralax3.avif');
     min-height: 500px;
     background-attachment: fixed;
     background-size: cover;
@@ -238,7 +238,7 @@ footer {
 }
 
 .paralax-port {
-    background-image: url('../img/paralax4.png');
+    background-image: url('../img/paralax4.avif');
     min-height: 500px;
     background-attachment: fixed;
     background-size: cover;
