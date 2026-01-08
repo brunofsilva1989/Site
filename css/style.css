@@ -7,11 +7,11 @@
     --jan-white: #ffffff;
 }
 
-html, body {
+html, body{
     scroll-behavior: smooth;
     background: var(--jan-bg-dark);
     color: #222222;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
 }
 
 /* NAVBAR */
@@ -21,8 +21,16 @@ html, body {
 }
 
 .navbar-brand img {
-    height: 48px;      /* aqui você controla o tamanho do logo */
+    height: 100px;      /* aqui você controla o tamanho do logo */
     width: auto;
+}
+
+.logo_tada{
+  animation-duration: 5s; /* ou 2s */
+}
+
+.logo_hero{
+    animation-duration: 1.0s; /* ou 2s */
 }
 
 .nav-link {
@@ -216,4 +224,24 @@ footer {
 .fade-section.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*Ajustes do paralax*/
+
+.paralax-fade {
+    background-image: url('../img/paralax3.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paralax-port {
+    background-image: url('../img/paralax4.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
