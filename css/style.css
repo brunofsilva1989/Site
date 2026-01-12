@@ -453,8 +453,9 @@ footer .footer-social a:hover{
 
 /* Banner com altura “travada” e imagem preenchendo */
 .portfolio-banner--match{
-  height: 1040px;              /* ajuste principal p/ bater com o grid (print tá ~950) */
+  height: 1000px;              /* ajuste principal p/ bater com o grid (print tá ~950) */
   border-radius: 18px;
+  margin-top: -45px;
   overflow: hidden;
 }
 
