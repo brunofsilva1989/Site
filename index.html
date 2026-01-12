@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link active" href="#hero">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobre">Quem Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#parceria-evercode">Parceria</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="#parceria-evercode">Parceria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
@@ -121,138 +121,145 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-3">
-                        <div class="col-6">
+
+                        <!-- LINHA 1 (3 cards iguais) -->
+                        <div class="col-4">
                             <div class="service-card text-center">
                                 <h3 class="h5 mb-1">+35</h3>
                                 <small class="text-muted">Anos de experiência</small>
                             </div>
                         </div>
-                        <div class="col-6">
+
+                        <div class="col-4">
                             <div class="service-card text-center">
-                                <h3 class="h5 mb-1">+20</h3>
-                                <small class="text-muted">Marcas atendidas</small>
+                                <h3 class="h5 mb-1">+50</h3>
+                                <small class="text-muted">Logotipos criados</small>
                             </div>
                         </div>
+
+                        <div class="col-4">
+                            <div class="service-card text-center">
+                                <h3 class="h5 mb-1">+100</h3>
+                                <small class="text-muted">Projetos entregues</small>
+                            </div>
+                        </div>
+
+                        <!-- LINHA 2 (2 cards no mesmo nível) -->
                         <div class="col-6">
                             <div class="service-card text-center">
                                 <h3 class="h5 mb-1">Comunicação Visual</h3>
-                                <small class="text-muted">Cartões, flyers, folders</small>
+                                <small class="text-muted">Adesivos, Banners, Lonas, Cardápios</small>
                             </div>
                         </div>
+
                         <div class="col-6">
                             <div class="service-card text-center">
-                                <h3 class="h5 mb-1">Digital</h3>
-                                <small class="text-muted">Posts, banners, campanhas</small>
+                                <h3 class="h5 mb-1">Impressos</h3>
+                                <small class="text-muted">Cartões de visita, Flyers, Folders, Folhetos,
+                                    Cardápios</small>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PORTFÓLIO COM SLIDE -->
+    <!-- PORTFÓLIO (GRID) -->
     <section id="portfolio" class="section-alt">
         <div class="container fade-section">
             <p class="section-title text-center">Portfólio</p>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <!-- <h2 class="section-heading mb-0">Serviços</h2> -->
-                <!-- se quiser usar filtros depois -->
-            </div>
 
             <div class="portfolio-wrap">
-
                 <h1 class="portfolio-vertical">SERVIÇOS</h1>
 
-                <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-                        <!-- SLIDE 1 (4 imagens) -->
-                        <div class="carousel-item active">
-                            <div class="row g-3 justify-content-center">
-                                <div class="col-6 col-md-3">
+                <div class="portfolio-content">
+                    <div class="row g-4 portfolio-grid">
+                        <!-- 1 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
                                     <img src="img/SERVICOS/ARTE FINAL.avif" class="img-fluid rounded portfolio-zoom"
                                         alt="Arte Final" data-full="img/SERVICOS/ARTE FINAL.avif"
-                                        data-caption="Arte Final">
-                                    <strong>
-                                        <p class="text-center">Arte Final</p>
-                                    </strong>
+                                        data-caption="Arte Final" />
                                 </div>
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/CARDAPIOS.avif" class="img-fluid rounded portfolio-zoom"
-                                        alt="Trabalho 2" data-full="img/SERVICOS/CARDAPIOS.avif"
-                                        data-caption="Cardápios">
-                                    <strong>
-                                        <p class="text-center">Cardápios</p>
-                                    </strong>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/CARTÃO.avif" class="img-fluid rounded portfolio-zoom"
-                                        alt="Trabalho 3" data-full="img/SERVICOS/CARTÃO.avif"
-                                        data-caption="Cartões de Visita">
-                                    <strong>
-                                        <p class="text-center">Cartões de Visita</p>
-                                    </strong>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/SITES.avif" class="img-fluid rounded portfolio-zoom"
-                                        alt="Trabalho 8" data-full="img/SERVICOS/SITES.avif" data-caption="Sites">
-                                    <strong>
-                                        <p class="text-center">Sites</p>
-                                    </strong>
-                                </div>
+                                <p class="text-center mt-2 fw-semibold">Arte Final</p>
                             </div>
                         </div>
 
-                        <!-- SLIDE 2 (4 imagens) -->
-                        <div class="carousel-item">
-                            <div class="row g-3 justify-content-center">
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/comunicação visual.avif"
-                                        class="img-fluid rounded portfolio-zoom" alt="Trabalho 5"
-                                        data-full="img/SERVICOS/comunicação visual.avif"
-                                        data-caption="Comunicação Visual">
-                                    <strong>
-                                        <p class="text-center">Comunicação Visual</p>
-                                    </strong>
+                        <!-- 2 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/CARDAPIOS.avif" class="img-fluid rounded portfolio-zoom"
+                                        alt="Cardápios" data-full="img/SERVICOS/CARDAPIOS.avif"
+                                        data-caption="Cardápios" />
                                 </div>
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/EMBALAGENS.avif" class="img-fluid rounded portfolio-zoom"
-                                        alt="Trabalho 6" data-full="img/SERVICOS/EMBALAGENS.avif"
-                                        data-caption="Embalagens">
-                                    <strong>
-                                        <p class="text-center">Embalagens</p>
-                                    </strong>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <img src="img/SERVICOS/FOTOGRAFIA.avif" class="img-fluid rounded portfolio-zoom"
-                                        alt="Trabalho 7" data-full="img/SERVICOS/FOTOGRAFIA.avif"
-                                        data-caption="Fotografias">
-                                    <strong>
-                                        <p class="text-center">Fotografias</p>
-                                    </strong>
-                                </div>
+                                <p class="text-center mt-2 fw-semibold">Cardápios</p>
+                            </div>
+                        </div>
 
+                        <!-- 3 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/CARTÃO.avif" class="img-fluid rounded portfolio-zoom"
+                                        alt="Cartões de Visita" data-full="img/SERVICOS/CARTÃO.avif"
+                                        data-caption="Cartões de Visita" />
+                                </div>
+                                <p class="text-center mt-2 fw-semibold">Cartões de Visita</p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/SITES.avif" class="img-fluid rounded portfolio-zoom"
+                                        alt="Sites" data-full="img/SERVICOS/SITES.avif" data-caption="Sites" />
+                                </div>
+                                <p class="text-center mt-2 fw-semibold">Sites</p>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/comunicação visual.avif"
+                                        class="img-fluid rounded portfolio-zoom" alt="Comunicação Visual"
+                                        data-full="img/SERVICOS/comunicação visual.avif"
+                                        data-caption="Comunicação Visual" />
+                                </div>
+                                <p class="text-center mt-2 fw-semibold">Comunicação Visual</p>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/EMBALAGENS.avif" class="img-fluid rounded portfolio-zoom"
+                                        alt="Embalagens" data-full="img/SERVICOS/EMBALAGENS.avif"
+                                        data-caption="Embalagens" />
+                                </div>
+                                <p class="text-center mt-2 fw-semibold">Embalagens</p>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="portfolio-card">
+                                <div class="ratio ratio-1x1 portfolio-thumb">
+                                    <img src="img/SERVICOS/FOTOGRAFIA.avif" class="img-fluid rounded portfolio-zoom"
+                                        alt="Fotografias" data-full="img/SERVICOS/FOTOGRAFIA.avif"
+                                        data-caption="Fotografias" />
+                                </div>
+                                <p class="text-center mt-2 fw-semibold">Fotografias</p>
                             </div>
                         </div>
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                        <span class="" ">Anterior</span>
-                </button>
-                <button class=" carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                            <span class="">Próximo</span>
-                    </button>
                 </div>
             </div>
         </div>
@@ -416,7 +423,8 @@
                 </div>
 
                 <div class="d-flex align-items-center gap-3">
-                    <span class="text-muted"><a href="https:www.evercode.com.br" target="_blank" rel="noopener noreferrer">Criado por EVERCODE</a></span>
+                    <span class="text-muted"><a href="https:www.evercode.com.br" target="_blank"
+                            rel="noopener noreferrer">Criado por EVERCODE</a></span>
                 </div>
             </div>
         </div>

@@ -367,68 +367,85 @@ footer .footer-social a:hover{
 
 /*Ajuste de texto vertical*/
 /* H4 vertical (desktop) */
+.portfolio-wrap{
+  display: flex;
+  align-items: center;          /* alinha o SERVIÇOS com os cards */
+  gap: 40px;                    /* espaço entre SERVIÇOS e grid */
+  width: 100%;
+}
+
+/* Mantém o SERVIÇOS exatamente como vertical (sem posição absoluta) */
 .portfolio-vertical{
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  letter-spacing: .25rem;
-  margin: 0; /* tira margem padrão */
+  margin: 0;
+  letter-spacing: .25em;
+  font-weight: 700;
+  opacity: .9;
+
+  flex: 0 0 auto;               /* não deixa ele esmagar */
 }
 
-.portfolio-wrap{
+/* Aqui é a mágica: o grid vira “dono” do espaço todo */
+.portfolio-content{
+  flex: 1 1 auto;
+  min-width: 0;                 /* evita overflow estranho */
   display: flex;
-  gap: 18px;
-  align-items: center; /* <<< centraliza verticalmente em relação ao carousel */
+  justify-content: flex-start;  /* puxa pra esquerda do bloco (logo: mais pra direita na tela) */
 }
 
-/* no mobile volta ao normal pra não ficar estranho */
-@media (max-width: 991.98px){
+/* A row ocupa 100% do espaço disponível */
+.portfolio-grid{
+  width: 100%;
+  margin: 0;                    /* remove margens do row que podem centralizar */
+}
+
+/* Ajuste fino por tamanho de tela */
+@media (max-width: 992px){
+  .portfolio-wrap{ gap: 24px; }
+}
+
+@media (max-width: 768px){
+  .portfolio-wrap{
+    flex-direction: column;     /* no mobile, fica empilhado (mais bonito) */
+    align-items: center;
+  }
+
   .portfolio-vertical{
     writing-mode: horizontal-tb;
     transform: none;
-    letter-spacing: normal;
-    text-align: center;
-    margin-bottom: 12px;
+    letter-spacing: .08em;
+  }
+
+  .portfolio-content{
+    width: 100%;
+    justify-content: center;    /* centraliza no mobile */
   }
 }
 
 
-/*botoes next e back*/
+/*CSS do GRID*/
 
-/* Dá espaço lateral pro conteúdo não ficar embaixo dos botões */
-#portfolioCarousel{
-  padding: 0 64px; /* aumenta/diminui conforme precisar */
+.portfolio-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* deixa tudo com o mesmo “tamanho visual” */
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-/* Joga os controles pra fora */
-#portfolioCarousel .carousel-control-prev{
-  left: -12px;
-  width: 60px;
+.portfolio-thumb {
+  overflow: hidden;
+  border-radius: 12px;
 }
 
-#portfolioCarousel .carousel-control-next{
-  right: -12px;
-  width: 60px;
+.portfolio-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-/* Garante que o clique nas imagens não seja “roubado” pelos botões */
-#portfolioCarousel .carousel-control-prev,
-#portfolioCarousel .carousel-control-next{
-  opacity: 1;
+.portfolio-card p {
+  margin-bottom: 0;
 }
-
-/* No mobile não tem espaço, então volta pra dentro */
-@media (max-width: 575.98px){
-  #portfolioCarousel{
-    padding: 0 10px;
-  }
-  #portfolioCarousel .carousel-control-prev{
-    left: 0;
-    width: 44px;
-  }
-  #portfolioCarousel .carousel-control-next{
-    right: 0;
-    width: 44px;
-  }
-}
-
 
