@@ -206,13 +206,36 @@ section {
     border-radius: 50%;
 }
 
-/* FOOTER */
-footer {
-    background: #111111;
-    color: #d0d0d0;
-    font-size: 0.8rem;
-    padding: 24px 0;
+/* FOOTER - garantir contraste e corrigir text-muted no fundo escuro */
+footer{
+  background: #111111;
+  color: #e6e6e6;
 }
+
+footer .text-muted{
+  color: #bdbdbd !important;  /* Bootstrap pisa, então força */
+}
+
+/* Links/ícones no footer (caso você tenha colocado) */
+footer a{
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #ff5a00;
+}
+
+footer .footer-social a{
+  color: #e6e6e6;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+footer .footer-social a:hover{
+  color: #ff5a00;
+}
+
+
 
 /* ANIMAÇÃO: fade das seções */
 .fade-section {
