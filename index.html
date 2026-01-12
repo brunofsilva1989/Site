@@ -16,7 +16,7 @@
 <body>
     <!-- SPLASH / LOADING -->
     <div id="splash" class="splash">
-        <img src="img/logoazul.png" class="splash-logo" alt="Janison Publicidade">
+        <a href="#index"></a><img src="img/logoazul.png" class="splash-logo" alt="Janison Publicidade">
     </div>
 
 
@@ -34,9 +34,9 @@
             <div class="collapse navbar-collapse justify-content-end" id="mainNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#hero">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Estúdio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parceria-evercode">Parceria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 </ul>
             </div>
@@ -47,45 +47,53 @@
     <section id="hero" class="section-dark">
         <div class="container">
             <div class="row align-items-center gy-5">
-                <div class="col-lg-6 fade-section">
 
+                <!-- COLUNA 1 -->
+                <div class="col-lg-4 fade-section">
+                    <div
+                        class="hero-left d-flex flex-column flex-lg-row flex-lg-nowrap gap-5 align-items-center align-items-lg-start justify-content-lg-start">
 
-                    <div class="d-flex gap-4 mt-4 flex-wrap">
-                        <!-- Coluna 1: imagem + botão -->
+                        <!-- ITEM 1 -->
+                        <div class="hero-item d-flex flex-column align-items-center">
+                            <h2 class="section-title mb-2">Publicidade</h2>
 
-                        <div class="d-flex flex-column align-items-center">
-                            <p class="section-title">Publicidade</p>
-                            <img src="img/LOGO1.avif" class="img-fluid mb-2" style="max-width: 155px;"
-                                alt="Imagem Fale com a gente">
+                            <img src="img/LOGO1.avif" class="hero-media img-fluid mb-3" alt="Logo 1">
 
                             <a href="#contato" class="btn btn-jan-primary">Fale com a gente</a>
                         </div>
 
-                        <!-- Coluna 2: imagem + botão -->
-                        <div class="d-flex flex-column align-items-center">
-                            <p class="section-title">Inteligente</p>
-                            <img src="img/ERVIÇOS.avif" class="img-fluid mb-2" style="max-width: 70px;"
-                                alt="Imagem Ver trabalhos">
-                            <a href="#portfolio" class="btn btn-jan-outline">Ver trabalhos</a>
+                        <!-- ITEM 2 -->
+                        <div class="hero-item d-flex flex-column align-items-center align-items-lg-end text-lg-end">
+                            <!-- opcional: se quiser “descer” um pouco pra alinhar visualmente -->
+                            <div class="hero-box-spacer">
+                                <img src="img/ERVIÇOS.avif" class="hero-media hero-box-spacer img-fluid mb-3"
+                                    alt="Serviços">
+                            </div>
                         </div>
-                        <p class="hero-subtitle mt-3">
-                            Estúdio de publicidade focado em impressos, brindes e arte digital.
-                            A gente cuida da sua marca do rascunho ao material pronto na mão do cliente.
-                        </p>
-
                     </div>
-
                 </div>
 
-                <div class="col-lg-6 text-lg-end fade-section">
+                <!-- COLUNA 2 (BOTÃO CENTRAL) -->
+                <div class="col-lg-4 text-center fade-section">
+                    <button type="button"
+                        class="btn btn-jan-primary d-inline-flex align-items-center gap-2 portfolio-zoom"
+                        data-full="img/SERVICOS/CLIENTES.avif" data-caption="Principais Clientes">
+                        Principais Clientes
+                    </button>
+                </div>
+
+
+                <!-- COLUNA 3 -->
+                <div class="col-lg-4 text-lg-end fade-section">
                     <div class="hero-logo-wrap">
                         <img class="logo_hero animate__animated animate__bounceInUp" src="img/LOGO2.avif"
-                            style="width: 60%;" alt="">
+                            style="width: 100%;" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- SOBRE -->
     <section id="sobre" class="section-alt paralax-fade">
@@ -93,35 +101,40 @@
             <p class="section-title">Quem somos</p>
             <div class="row align-items-center gy-4">
                 <div class="col-lg-6">
-                    <h2 class="section-heading">Empresa de publicidade com foco em resultados</h2>
+                    <h2 class="section-heading">Quem Somos</h2>
                     <p class="mb-3">
-                        A Janison Publicidade, trabalha há anos com criação de logotipos, papelaria, brindes
-                        promocionais,
-                        fotografia e arte digital. O foco é simples: fazer sua marca ser lembrada
-                        onde realmente importa – na mão e na memória do seu cliente.
+                        Desde 1988, atuamos no mercado de publicidade e arte final, construindo uma trajetória marcada
+                        pela experiência, criatividade e compromisso com cada projeto. Ao longo de mais de três décadas,
+                        acompanhamos a evolução do design e da comunicação visual, sempre nos reinventando para entregar
+                        soluções modernas, eficientes e com a qualidade que nossos clientes merecem.
+
+                        Trabalhamos com rapidez, profissionalismo e excelência, oferecendo artes para mídias impressas e
+                        sociais, desenvolvimento de campanhas, criação de logotipos e identidade visual completa. Nosso
+                        objetivo é transformar ideias em peças impactantes, fortalecendo marcas e ampliando resultados.
+
                     </p>
                     <p class="mb-3">
-                        Atendimento próximo, produção ágil e parceiros de confiança
-                        para impressão e distribuição dos materiais.
+                        Com expertise consolidada e paixão pelo que fazemos, seguimos criando artes que comunicam,
+                        conectam e inspiram.
                     </p>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="service-card text-center">
-                                <h3 class="h5 mb-1">+20</h3>
-                                <small class="text-muted">anos de experiência</small>
+                                <h3 class="h5 mb-1">+35</h3>
+                                <small class="text-muted">Anos de experiência</small>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="service-card text-center">
                                 <h3 class="h5 mb-1">+20</h3>
-                                <small class="text-muted">marcas atendidas</small>
+                                <small class="text-muted">Marcas atendidas</small>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="service-card text-center">
-                                <h3 class="h5 mb-1">Impressos</h3>
+                                <h3 class="h5 mb-1">Comunicação Visual</h3>
                                 <small class="text-muted">Cartões, flyers, folders</small>
                             </div>
                         </div>
@@ -137,69 +150,18 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section-dark">
-        <div class="container fade-section">
-            <p class="section-title">O que fazemos</p>
-            <h2 class="section-heading">Serviços</h2>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <h3 class="h5">Impressos</h3>
-                        <p class="text-muted mb-0">
-                            Cartões de visita, flyers, folders, catálogos, cardápios
-                            e toda a papelaria para sua marca.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <h3 class="h5">Brindes Promocionais</h3>
-                        <p class="text-muted mb-0">
-                            Canecas, camisetas, canetas, squeezes e kits promocionais
-                            para eventos e campanhas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <h3 class="h5">Criação de Marca</h3>
-                        <p class="text-muted mb-0">
-                            Logotipo, manual de aplicação e padronização visual
-                            para sua empresa sair com identidade forte.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <h3 class="h5">Digital & Social</h3>
-                        <p class="text-muted mb-0">
-                            Artes para redes sociais, banners, capas e peças para
-                            campanhas online.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- PORTFÓLIO COM SLIDE -->
-    <section id="portfolio" class="section-alt paralax-port">
+    <section id="portfolio" class="section-alt">
         <div class="container fade-section">
-            <p class="section-title">Trabalhos</p>
+            <p class="section-title text-center">Portfólio</p>
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="section-heading mb-0">Portfólio</h2>
-                <!-- se quiser usar filtros depois -->
-                <!-- <div class="btn-group">
-                    <button class="btn btn-sm btn-jan-outline">Todos</button>
-                    <button class="btn btn-sm btn-jan-outline">Impressos</button>
-                    <button class="btn btn-sm btn-jan-outline">Brindes</button>
-                </div> -->
+                <!-- <h2 class="section-heading mb-0">Serviços</h2> -->
+                <!-- se quiser usar filtros depois -->                
             </div>
+
+            <div class="portfolio-wrap">
+
+                <h1 class="portfolio-vertical">SERVIÇOS</h1>
 
             <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -214,27 +176,28 @@
                     <div class="carousel-item active">
                         <div class="row g-3 justify-content-center">
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/ARTE FINAL.avif" class="img-fluid rounded" alt="Trabalho 1">
+                                <img src="img/SERVICOS/ARTE FINAL.avif" class="img-fluid rounded portfolio-zoom"
+                                    alt="Arte Final" data-full="img/SERVICOS/ARTE FINAL.avif" data-caption="Arte Final">
                                 <strong>
                                     <p class="text-center">Arte Final</p>
                                 </strong>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/CARDAPIOS.avif" class="img-fluid rounded" alt="Trabalho 2">
+                                <img src="img/SERVICOS/CARDAPIOS.avif" class="img-fluid rounded portfolio-zoom" alt="Trabalho 2" data-full="img/SERVICOS/CARDAPIOS.avif" data-caption="Cardápios">
                                 <strong>
                                     <p class="text-center">Cardápios</p>
                                 </strong>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/CARTÃO.avif" class="img-fluid rounded" alt="Trabalho 3">
+                                <img src="img/SERVICOS/CARTÃO.avif" class="img-fluid rounded portfolio-zoom" alt="Trabalho 3" data-full="img/SERVICOS/CARTÃO.avif" data-caption="Cartões de Visita">
                                 <strong>
                                     <p class="text-center">Cartões de Visita</p>
                                 </strong>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/CLIENTES.avif" class="img-fluid rounded" alt="CLIENTES">
+                                <img src="img/SERVICOS/SITES.avif" class="img-fluid rounded portfolio-zoom" alt="Trabalho 8" data-full="img/SERVICOS/SITES.avif" data-caption="Sites">
                                 <strong>
-                                    <p class="text-center">Clientes</p>
+                                    <p class="text-center">Sites</p>
                                 </strong>
                             </div>
                         </div>
@@ -244,68 +207,46 @@
                     <div class="carousel-item">
                         <div class="row g-3 justify-content-center">
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/comunicação visual.avif" class="img-fluid rounded"
-                                    alt="Trabalho 5">
+                                <img src="img/SERVICOS/comunicação visual.avif" class="img-fluid rounded portfolio-zoom"
+                                    alt="Trabalho 5" data-full="img/SERVICOS/comunicação visual.avif" data-caption="Comunicação Visual">
                                 <strong>
                                     <p class="text-center">Comunicação Visual</p>
                                 </strong>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/EMBALAGENS.avif" class="img-fluid rounded" alt="Trabalho 6">
+                                <img src="img/SERVICOS/EMBALAGENS.avif" class="img-fluid rounded portfolio-zoom" alt="Trabalho 6" data-full="img/SERVICOS/EMBALAGENS.avif" data-caption="Embalagens">
                                 <strong>
                                     <p class="text-center">Embalagens</p>
                                 </strong>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/FOTOGRAFIA.avif" class="img-fluid rounded" alt="Trabalho 7">
+                                <img src="img/SERVICOS/FOTOGRAFIA.avif" class="img-fluid rounded portfolio-zoom" alt="Trabalho 7" data-full="img/SERVICOS/FOTOGRAFIA.avif" data-caption="Fotografias">
                                 <strong>
                                     <p class="text-center">Fotografias</p>
                                 </strong>
                             </div>
-                            <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/SITES.avif" class="img-fluid rounded" alt="Trabalho 8">
-                                <strong>
-                                    <p class="text-center">Sites</p>
-                                </strong>
-                            </div>
+
                         </div>
                     </div>
-
-                    <!-- SLIDE 3 (4 imagens) -->
-                    <!-- <div class="carousel-item">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/redes sociais.jpg" class="img-fluid rounded" alt="Trabalho 9">
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/SITES.jpg" class="img-fluid rounded" alt="Trabalho 10">
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/IMG11.jpg" class="img-fluid rounded" alt="Trabalho 11">
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="img/SERVICOS/IMG12.jpg" class="img-fluid rounded" alt="Trabalho 12">
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="" ">Anterior</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
+                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="">Próximo</span>
                 </button>
             </div>
+            </div>            
         </div>
     </section>
 
     <!-- Parceria / EVERCODE -->
-    <section id="parceria-evercode" class="section-dark">
+    <section id="parceria-evercode" class="section-dark paralax-port">
         <div class="container fade-section">
             <p class="section-title">Parceria</p>
             <h2 class="section-heading">Sites e Sistemas com a <strong>EVERCODE</strong></h2>
@@ -351,23 +292,21 @@
                                 Quero um orçamento
                             </a>
 
-                            <a href="https://wa.me/5511947350577?text=Quero%20um%20or%C3%A7amento%20pela%20EVERCODE%20(site%20ou%20sistema)."
+                            <a href="https://wa.me/5511912959858?text=Quero%20um%20or%C3%A7amento%20pela%20EVERCODE%20(site%20ou%20sistema)."
                                 class="btn btn-jan-outline w-100 mt-2" target="_blank" rel="noopener">
                                 Chamar no WhatsApp
                             </a>
 
                             <a href="https://evercode.com.br/" class="d-block text-center mt-3" target="_blank"
                                 rel="noopener">
-                                <small class="text-muted">Conhecer a EVERCODE</small>
+                                <small class="text-muted">Conheça a EVERCODE</small>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
 
     <!-- CONTATO -->
     <section id="contato" class="section-alt">
@@ -377,13 +316,13 @@
                 <div class="col-lg-6">
                     <h2 class="section-heading">Contato</h2>
                     <p class="mb-3">
-                        Conta um pouco do seu projeto e a gente responde com as opções de orçamento.
+                        Entre em contato para discutir seu próximo projeto ou solicitar um orçamento.
                     </p>
                     <ul class="list-unstyled text-muted mb-4">
                         <li><strong>Email:</strong> criart@janisonpublicidade.com.br</li>
                         <li><strong>Telefone:</strong> (11) 4476-2305</li>
                         <li><strong>WhatsApp:</strong> (11) 97345-0577</li>
-                        <li><strong>Endereço:</strong> Rua Exemplo, 123 – São Paulo / SP</li>
+                        <li> Santo André – São Paulo / SP</li>
 
                     </ul>
 
@@ -423,6 +362,23 @@
         </div>
     </section>
 
+    <!-- MODAL UNIVERSAL (AMPLIAR IMAGEM) -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+
+                <div class="modal-body pt-0">
+                    <img id="imgModalTarget" src="" class="img-fluid w-100 rounded-4 shadow" alt="">
+                    <p id="imgModalCaption" class="text-center text-white mt-3 mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
@@ -434,10 +390,6 @@
     <!-- BOOTSTRAP JS + POPPER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-    <!-- JS SIMPLES: scrollspy + animação de entrada -->
-
-
 </body>
 
 </html>

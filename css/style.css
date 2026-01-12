@@ -30,7 +30,7 @@ html, body{
 }
 
 .logo_hero{
-    animation-duration: 1.0s; /* ou 2s */
+    animation-duration: 1s; /* ou 2s */
 }
 
 .nav-link {
@@ -125,7 +125,7 @@ section {
     border-radius: 999px;
     padding: 0.7rem 1.8rem;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.72rem;
     letter-spacing: .12em;
     border: 1px solid #111;
     color: #ffffff;
@@ -281,4 +281,131 @@ footer {
   .splash-logo { animation: none; }
   .splash { transition: none; }
 }
+
+/*AJUSTES NOVOS HERO*/
+
+/* Ajusta espaçamentos do bloco esquerdo */
+#hero .hero-left{
+  gap: 32px;                 /* espaço entre colunas 1 e 2 */
+  margin-top: 12px;          /* controla aquele respiro geral */
+}
+
+/* Caixa de cada “coluninha” (logo/botão e serviços) */
+#hero .hero-box{
+  width: 240px;              /* garante mesma largura pros 2 lados */
+}
+
+/* As duas imagens ficam IGUAIS */
+#hero .hero-media{
+  width: 220px;              /* tamanho fixo igual pra ambas */
+  height: 220px;             /* altura fixa pra padronizar */
+  object-fit: contain;       /* não distorce, só encaixa */
+}
+
+/* Se você quer alinhar a imagem da coluna 2 na mesma altura do conteúdo da coluna 1 */
+#hero .hero-box-spacer{
+  height: 320px;              /* “desce” a imagem da coluna 2 (ajuste fino) */
+}
+
+/* Responsivo: no mobile não estoura */
+@media (max-width: 991.98px){
+  #hero .hero-box{
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #hero .hero-media{
+    width: 240px;
+    height: 240px;
+    margin-inline: auto;
+  }
+
+  #hero .hero-left{
+    justify-content: center;
+  }
+}
+
+/*Ajustes Modal*/
+
+.portfolio-zoom{
+  cursor: zoom-in;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.portfolio-zoom:hover{
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+.modal-backdrop.show{
+  opacity: .85;
+}
+
+
+/*Ajuste de texto vertical*/
+/* H4 vertical (desktop) */
+.portfolio-vertical{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: .25rem;
+  margin: 0; /* tira margem padrão */
+}
+
+.portfolio-wrap{
+  display: flex;
+  gap: 18px;
+  align-items: center; /* <<< centraliza verticalmente em relação ao carousel */
+}
+
+/* no mobile volta ao normal pra não ficar estranho */
+@media (max-width: 991.98px){
+  .portfolio-vertical{
+    writing-mode: horizontal-tb;
+    transform: none;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
+
+/*botoes next e back*/
+
+/* Dá espaço lateral pro conteúdo não ficar embaixo dos botões */
+#portfolioCarousel{
+  padding: 0 64px; /* aumenta/diminui conforme precisar */
+}
+
+/* Joga os controles pra fora */
+#portfolioCarousel .carousel-control-prev{
+  left: -12px;
+  width: 60px;
+}
+
+#portfolioCarousel .carousel-control-next{
+  right: -12px;
+  width: 60px;
+}
+
+/* Garante que o clique nas imagens não seja “roubado” pelos botões */
+#portfolioCarousel .carousel-control-prev,
+#portfolioCarousel .carousel-control-next{
+  opacity: 1;
+}
+
+/* No mobile não tem espaço, então volta pra dentro */
+@media (max-width: 575.98px){
+  #portfolioCarousel{
+    padding: 0 10px;
+  }
+  #portfolioCarousel .carousel-control-prev{
+    left: 0;
+    width: 44px;
+  }
+  #portfolioCarousel .carousel-control-next{
+    right: 0;
+    width: 44px;
+  }
+}
+
 

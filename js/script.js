@@ -56,3 +56,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   }
 });
+
+
+/*MODAL*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalEl = document.getElementById("imgModal");
+  const imgTarget = document.getElementById("imgModalTarget");
+  const captionEl = document.getElementById("imgModalCaption");
+
+  if (!modalEl || !imgTarget) return;
+
+  const modal = new bootstrap.Modal(modalEl);
+
+  document.addEventListener("click", (e) => {
+    const trigger = e.target.closest(".portfolio-zoom");
+    if (!trigger) return;
+
+    const fullSrc = trigger.getAttribute("data-full") || trigger.getAttribute("src");
+    const caption = trigger.getAttribute("data-caption") || trigger.getAttribute("alt") || "";
+
+    if (!fullSrc) return;
+
+    imgTarget.src = fullSrc;
+    imgTarget.alt = caption;
+    if (captionEl) captionEl.textContent = caption;
+
+    modal.show();
+  });
+
+  modalEl.addEventListener("hidden.bs.modal", () => {
+    imgTarget.src = "";
+    imgTarget.alt = "";
+    if (captionEl) captionEl.textContent = "";
+  });
+});
+
