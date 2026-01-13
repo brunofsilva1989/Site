@@ -92,3 +92,44 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/*ENVIO DO FORM*/
+
+(() => {
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+  const btn = document.getElementById("btnEnviar");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    status.innerHTML = "";
+    btn.disabled = true;
+    btn.textContent = "Enviando...";
+
+    try {
+      const formData = new FormData(form);
+
+      const resp = await fetch("mailer/send-email.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await resp.json();
+
+      if (!resp.ok || !data.ok) {
+        status.innerHTML = `<div class="alert alert-danger">${data.message || "Erro ao enviar."}</div>`;
+        return;
+      }
+
+      status.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+      form.reset();
+    } catch (err) {
+      status.innerHTML = `<div class="alert alert-danger">Falha de rede ou servidor. Tente novamente.</div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Enviar mensagem";
+    }
+  });
+})();
