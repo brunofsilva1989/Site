@@ -53,7 +53,7 @@ try {
   // ===== SMTP (recomendado) =====
   // Use os dados SMTP do seu e-mail na Hostinger (ou do provedor que você usa).
   $mail->isSMTP();
-  $mail->Host       = 'smtp.janisonpublicidade.com.br';
+  $mail->Host       = 'mail.janisonpublicidade.com.br';
   $mail->SMTPAuth   = true;
   $mail->Username   = 'criart@janisonpublicidade.com.br';
   $mail->Password   = 'janison2014###';
