@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const formData = new FormData(form);
 
-      const resp = await fetch("mailer/send-email.php", {
+      const resp = await fetch("mailer/send-mail.php", {
         method: "POST",
         body: formData
       });

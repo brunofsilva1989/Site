@@ -57,8 +57,8 @@ try {
   $mail->SMTPAuth   = true;
   $mail->Username   = 'criart@janisonpublicidade.com.br';
   $mail->Password   = 'janison2014###';
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // ou PHPMailer::ENCRYPTION_SMTPS
-  $mail->Port       = 587; // 465 (SMTPS) ou 587 (STARTTLS)
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // ou PHPMailer::ENCRYPTION_SMTPS
+  $mail->Port       = 465; // 465 (SMTPS) ou 587 (STARTTLS)
 
   // Remetente
   $mail->setFrom('criart@janisonpublicidade.com.br', 'Site Janison Publicidade');
