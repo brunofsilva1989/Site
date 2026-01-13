@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+// declare(strict_types=1);
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -18,10 +18,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // ====== Pegando e validando dados ======
-$nome     = trim($_POST['nome'] ?? '');
-$email    = trim($_POST['email'] ?? '');
-$telefone = trim($_POST['telefone'] ?? '');
-$mensagem = trim($_POST['mensagem'] ?? '');
+$nome     = trim(isset($_POST['nome']) ? $_POST['nome'] : '');
+$email    = trim(isset($_POST['email']) ? $_POST['email'] : '');
+$telefone = trim(isset($_POST['telefone']) ? $_POST['telefone'] : '');
+$mensagem = trim(isset($_POST['mensagem']) ? $_POST['mensagem'] : '');
 
 if ($nome === '' || $email === '' || $mensagem === '') {
   http_response_code(400);
